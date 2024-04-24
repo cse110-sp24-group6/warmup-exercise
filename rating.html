@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sentiment Rating</title>
+<!-- replace styles.css with css file name -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="sentimentPopup" class="hidden">
+    <div class="sentimentContent">
+        <h2>How do you feel about the service?</h2>
+        <div class="ratingOptions">
+            <!-- The sentRate function should change the stored rating from js -->
+            <img src="images/angry.png" alt="Angry" onclick="sentRate(1)" width="125" height="125">
+            <img src="images/displeased.png" alt="Displeased" onclick="sentRate(2)" width="125" height="125">
+            <img src="images/neutral.png" alt="Neutral" onclick="sentRate(3)" width="125" height="125">
+            <img src="images/pleased.png" alt="Pleased" onclick="sentRate(4)" width="125" height="125">
+            <img src="images/happy.png" alt="Happy" onclick="sentRate(5)" width="125" height="125">
+        </div>
+        <button onclick="closePopup()">No Thanks</button>
+    </div>
+</div>
+<div id="ratingPopup" class="hidden">
+    <div class="egg-rating-container">
+        <h2>Rate your experience</h2>
+        <!-- The eggRate function should change the stored rating from js -->
+        <span class="egg" id="egg1" onclick="eggRate(1)">
+            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+        </span>
+        <span class="egg" id="egg2" onclick="eggRate(2)">
+            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+        </span>
+        <span class="egg" id="egg3" onclick="eggRate(3)">
+            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+        </span>
+        <span class="egg" id="egg4" onclick="eggRate(4)">
+            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+        </span>
+        <span class="egg" id="egg5" onclick="eggRate(5)">
+            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+        </span>
+    </div>
+</div>
+<div>
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+</div>
+<button type="submit">Submit Form</button>
+<!-- replace script.js with js file name -->
+<script src="script.js"></script>
+</body>
+</html>
