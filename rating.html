@@ -9,7 +9,7 @@
 <body>
 <div id="sentimentPopup" class="hidden">
     <div class="sentimentContent">
-        <h2>How do you feel about the service?</h2>
+        <h2>How do you feel about our service?</h2>
         <div class="ratingOptions">
             <!-- The sentRate function should change the stored rating from js -->
             <span class='dino' id='dino1' onclick="sentRate(1)">
@@ -28,7 +28,6 @@
                 <img src="images/happy.png" alt="Happy" width="125" height="125">
             </span>
         </div>
-        <button onclick="closePopup()">No Thanks</button>
     </div>
 </div>
 <div id="ratingPopup" class="hidden">
@@ -36,19 +35,19 @@
         <h2>Rate your experience</h2>
         <!-- The eggRate function should change the stored rating from js -->
         <span class="egg" id="egg1" onclick="eggRate(1)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/angry.png" alt="egg photo" width="88" height="52.8" onclick="changeImage('images/angry.png')">
         </span>
         <span class="egg" id="egg2" onclick="eggRate(2)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/displeased.png" alt="egg photo" width="88" height="52.8" onclick="changeImage('images/displeased.png')">
         </span>
         <span class="egg" id="egg3" onclick="eggRate(3)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/neutral.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/neutral.png')">
         </span>
         <span class="egg" id="egg4" onclick="eggRate(4)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/pleased.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/pleased.png')">
         </span>
         <span class="egg" id="egg5" onclick="eggRate(5)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/happy.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/happy.png')">
         </span>
     </div>
 </div>
@@ -56,6 +55,7 @@
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
 </div>
+<button onclick="closePopup()">No Thanks</button>
 <button type="submit">Submit Form</button>
 <!-- replace script.js with js file name -->
 <script src="script.js"></script>

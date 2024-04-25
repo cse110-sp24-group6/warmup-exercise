@@ -8,6 +8,20 @@ function selectDino(dino) {
   dino.classList.add('selected');
 }
 
+function changeImage(id) {
+    var image = document.getElementById(id); 
+    if (image.getAttribute('src')=='images/egg.png') { 
+        image.src = id;
+        image.setAttribute('width',70); 
+        image.setAttribute('height',70);
+    } else { 
+        image.src = 'images/egg.png'; 
+        image.setAttribute('width',88); 
+        image.setAttribute('height',52.8);
+        i
+    }
+}
+
 dinos.forEach(dino => dino.addEventListener('click', () => selectDino(dino)));
 
 function sentRate(rating) {
@@ -18,7 +32,6 @@ function sentRate(rating) {
 
 // Function to handle egg rating
 function eggRate(rating) {
-    
     localStorage.setItem('eggRating', rating);
     // Visual feedback: highlight the clicked eggs
     for (let i = 1; i <= 5; i++) {
@@ -33,7 +46,8 @@ function eggRate(rating) {
 
 // Function to close the rating popup
 function closePopup() {
-    document.getElementById('ratingPopup').classList.add('hidden'); // Hide the rating popup
+    // document.getElementById('ratingPopup').classList.add('hidden'); // Hide the rating popup
+    window.location.href = 'thankyou_blank.html';
 }
 
 
