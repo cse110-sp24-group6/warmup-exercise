@@ -1,0 +1,33 @@
+/* CSS for styling purposes */
+
+
+* {
+    text-align: center;
+}
+
+.dino img {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+
+.dino img:hover {
+opacity: 1.0;
+}
+
+.dino.selected img {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.egg {
+    cursor: pointer;
+}
+
+
+.egg img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.egg.rated img {
+    transform: scale(2);
+}
