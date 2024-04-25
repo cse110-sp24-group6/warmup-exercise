@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sentiment Rating</title>
 <!-- replace styles.css with css file name -->
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="style/css_styles.css">
 </head>
 <body>
 <div id="sentimentPopup" class="hidden">
@@ -18,12 +18,11 @@
             <img src="images/pleased.png" alt="Pleased" onclick="sentRate(4)" width="125" height="125">
             <img src="images/happy.png" alt="Happy" onclick="sentRate(5)" width="125" height="125">
         </div>
-        <button onclick="closePopup()">No Thanks</button>
     </div>
 </div>
 <div id="ratingPopup" class="hidden">
     <div class="egg-rating-container">
-        <h2>Rate your experience</h2>
+        <!-- <h2>Rate your experience</h2> -->
         <!-- The eggRate function should change the stored rating from js -->
         <span class="egg" id="egg1" onclick="eggRate(1)">
             <img src="images/egg.png" alt="egg photo" width="50" height="30">
@@ -41,12 +40,13 @@
             <img src="images/egg.png" alt="egg photo" width="50" height="30">
         </span>
     </div>
+    <button id="No_thanks_button" onclick="closePopup()">No Thanks</button>
 </div>
 <div>
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
 </div>
-<button type="submit">Submit Form</button>
+<button id="submit_button" type="submit">Submit Form</button>
 <!-- replace script.js with js file name -->
 <script src="script.js"></script>
 </body>
