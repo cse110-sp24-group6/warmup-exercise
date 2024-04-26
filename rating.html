@@ -9,45 +9,56 @@
 <body>
 <div id="sentimentPopup" class="hidden">
     <div class="sentimentContent">
-        <h2>How do you feel about the service?</h2>
+        <h2>How do you feel about our service?</h2>
         <div class="ratingOptions">
             <!-- The sentRate function should change the stored rating from js -->
-            <img src="images/angry.png" alt="Angry" onclick="sentRate(1)" width="125" height="125">
-            <img src="images/displeased.png" alt="Displeased" onclick="sentRate(2)" width="125" height="125">
-            <img src="images/neutral.png" alt="Neutral" onclick="sentRate(3)" width="125" height="125">
-            <img src="images/pleased.png" alt="Pleased" onclick="sentRate(4)" width="125" height="125">
-            <img src="images/happy.png" alt="Happy" onclick="sentRate(5)" width="125" height="125">
+            <span class='dino' id='dino1' onclick="sentRate(1)">
+                <img src="images/angry.png" alt="Angry" width="125" height="125">
+            </span>
+            <span class='dino' id='dino2' onclick="sentRate(2)">
+                <img src="images/displeased.png" alt="Displeased" width="125" height="125">
+            </span>
+            <span class='dino' id='dino3' onclick="sentRate(3)">
+                <img src="images/neutral.png" alt="Neutral" width="125" height="125">
+            </span>
+            <span class='dino' id='dino4' onclick="sentRate(4)">    
+                <img src="images/pleased.png" alt="Pleased" width="125" height="125">
+            </span>
+            <span class='dino' id='dino5' onclick="sentRate(5)">    
+                <img src="images/happy.png" alt="Happy" width="125" height="125">
+            </span>
         </div>
     </div>
 </div>
 <div id="ratingPopup" class="hidden">
     <div class="egg-rating-container">
-        <!-- <h2>Rate your experience</h2> -->
+        <h2>Rate your eggs-perience (from 1 egg to 5 eggs)</h2>
         <!-- The eggRate function should change the stored rating from js -->
         <span class="egg" id="egg1" onclick="eggRate(1)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/my-dino1.png" alt="egg photo" width="88" height="52.8" onclick="changeImage('images/my-dino1.png')">
         </span>
         <span class="egg" id="egg2" onclick="eggRate(2)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/my-dino2.png" alt="egg photo" width="88" height="52.8" onclick="changeImage('images/my-dino2.png')">
         </span>
         <span class="egg" id="egg3" onclick="eggRate(3)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/my-dino3.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/my-dino3.png')">
         </span>
         <span class="egg" id="egg4" onclick="eggRate(4)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/my-dino4.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/my-dino4.png')">
         </span>
         <span class="egg" id="egg5" onclick="eggRate(5)">
-            <img src="images/egg.png" alt="egg photo" width="50" height="30">
+            <img src="images/egg.png" id="images/my-dino5.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/my-dino5.png')">
         </span>
     </div>
     <button id="No_thanks_button" onclick="closePopup()">No Thanks</button>
 </div>
+<button onclick="closePopup()" style="margin: 10px;">Decline to Rate</button>
+
 <div>
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
 </div>
-<button id="submit_button" type="submit">Submit Form</button>
-<!-- replace script.js with js file name -->
+<button type="submit" onclick="submitForm()">Submit Form</button>
 <script src="script.js"></script>
 </body>
 </html>

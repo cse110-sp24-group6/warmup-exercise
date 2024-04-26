@@ -1,0 +1,111 @@
+/* CSS for styling purposes */
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 210, 171);
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #FF6347;
+    font-size: 36px;
+}
+
+h3 {
+    color: #FF6347;
+    font-size: 24px;
+}
+
+
+p {
+    margin-bottom: 10px;
+}
+.content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#sentimentRating,
+#eggRating {
+    font-weight: bold;
+    color: #FF6347;
+}
+
+/* Styling for the comments section */
+#comments {
+    font-weight: bold;
+    background-color: rgb(221, 209, 218);
+    color: #FF6347;
+}
+
+
+.dino img {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.dino img:hover {
+opacity: 1.0;
+}
+
+.dino.selected img {
+    opacity: 1.0;
+    cursor: pointer;
+}
+
+.egg {
+    cursor: pointer;
+}
+
+#comments {
+    margin-top: 1em;
+}
+
+#submit_button {
+    margin-top: 2em;
+}
+
+/* @media */
+@media (max-width: 900px){
+    .egg-rating-container img {
+        width: 4em;
+        height: 2.4em;
+        margin-right: 0.001em;
+        margin-left: 0.001em;
+        margin-bottom: 1em;
+    }
+
+    #comments {
+        max-width: 25em;
+    }
+}
+
+button {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #FF6347;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
+button:hover {
+    background-color: rgb(107, 28, 28);
+}
