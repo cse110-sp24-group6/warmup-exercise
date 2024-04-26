@@ -16,7 +16,15 @@ body {
 
 h1 {
     margin-bottom: 20px;
+    color: #FF6347;
+    font-size: 36px;
 }
+
+h3 {
+    color: #FF6347;
+    font-size: 24px;
+}
+
 
 p {
     margin-bottom: 10px;
@@ -29,17 +37,6 @@ p {
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
-    color: #FF6347;
-    font-size: 36px;
-}
-
-h3 {
-    color: #FF6347;
-    font-size: 24px;
-}
-
 
 #sentimentRating,
 #eggRating {
@@ -73,7 +70,7 @@ opacity: 1.0;
     cursor: pointer;
 }
 
-
+/* 
 .egg img {
     transition: transform 0.2s ease-in-out;
     width: 5em;
@@ -81,7 +78,7 @@ opacity: 1.0;
     margin-right: 0.01em;
     margin-left: 0.01em;
     margin-bottom: 1em;
-}
+} */
 
 /* .egg.rated img {
     transform: scale(2);

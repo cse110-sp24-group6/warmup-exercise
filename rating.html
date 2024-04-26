@@ -32,7 +32,7 @@
 </div>
 <div id="ratingPopup" class="hidden">
     <div class="egg-rating-container">
-        <h2>Rate your experience</h2>
+        <h2>Rate your eggs-perience (from 1 egg to 5 eggs)</h2>
         <!-- The eggRate function should change the stored rating from js -->
         <span class="egg" id="egg1" onclick="eggRate(1)">
             <img src="images/egg.png" id="images/angry.png" alt="egg photo" width="88" height="52.8" onclick="changeImage('images/angry.png')">
@@ -51,11 +51,12 @@
         </span>
     </div>
 </div>
+<button onclick="closePopup()" style="margin: 10px;">Decline to Rate</button>
+
 <div>
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
 </div>
-<button onclick="closePopup()">No Thanks</button>
 <button type="submit">Submit Form</button>
 <!-- replace script.js with js file name -->
 <script src="script.js"></script>
