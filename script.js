@@ -77,5 +77,5 @@ function submitForm() {
 }
 
 function back() {
-    window.location.href = 'rating.html';
+    window.location.href = 'index.html';
 }
