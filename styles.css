@@ -92,7 +92,6 @@ opacity: 1.0;
 }
 
 button {
-    /* padding: 12px 24px; */
     font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
@@ -100,7 +99,6 @@ button {
     color: #fff;
     background-color: #FF6347;
     border: none;
-    /* border-radius: 6px; */
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
