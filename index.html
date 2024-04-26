@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sentiment Rating</title>
 <!-- replace styles.css with css file name -->
-<link rel="stylesheet" href="style/css_styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div id="sentimentPopup" class="hidden">
@@ -50,9 +50,8 @@
             <img src="images/egg.png" id="images/my-dino5.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/my-dino5.png')">
         </span>
     </div>
-    <button id="No_thanks_button" onclick="closePopup()">No Thanks</button>
+    <button onclick="closePopup()" style="margin: 10px;">Decline to Rate</button>
 </div>
-<button onclick="closePopup()" style="margin: 10px;">Decline to Rate</button>
 
 <div>
     <label for="comments">Additional Comments:</label><br>
