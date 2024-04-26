@@ -1,6 +1,4 @@
 /* CSS for styling purposes */
-
-
 * {
     text-align: center;
     box-sizing: border-box;
@@ -46,8 +44,8 @@ p {
 
 /* Styling for the comments section */
 #comments {
-    font-style: italic;
     font-weight: bold;
+    background-color: rgb(221, 209, 218);
     color: #FF6347;
 }
 
@@ -70,20 +68,6 @@ opacity: 1.0;
     cursor: pointer;
 }
 
-/* 
-.egg img {
-    transition: transform 0.2s ease-in-out;
-    width: 5em;
-    height: 3em;
-    margin-right: 0.01em;
-    margin-left: 0.01em;
-    margin-bottom: 1em;
-} */
-
-/* .egg.rated img {
-    transform: scale(2);
-} */
-
 #comments {
     margin-top: 1em;
 }
@@ -105,4 +89,25 @@ opacity: 1.0;
     #comments {
         max-width: 25em;
     }
+}
+
+button {
+    /* padding: 12px 24px; */
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #FF6347;
+    border: none;
+    /* border-radius: 6px; */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+}
+button:hover {
+    background-color: rgb(107, 28, 28);
 }

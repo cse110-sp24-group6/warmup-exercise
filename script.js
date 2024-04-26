@@ -9,16 +9,21 @@ function selectDino(dino) {
 }
 
 function changeImage(id) {
-    var image = document.getElementById(id); 
-    if (image.getAttribute('src')=='images/egg.png') { 
-        image.src = id;
-        image.setAttribute('width',70); 
-        image.setAttribute('height',70);
-    } else { 
+    let ids= ["images/my-dino1.png", "images/my-dino2.png", "images/my-dino3.png", "images/my-dino4.png", "images/my-dino5.png"]; 
+    let num = id.charAt(id.length - 5);
+    let intValue = parseInt(num);
+
+    for (let i = 0; i < 5; i++) {
+        let newID = ids[i]
+        var image = document.getElementById(newID);
         image.src = 'images/egg.png'; 
         image.setAttribute('width',88); 
         image.setAttribute('height',52.8);
-        i
+        if (i < intValue && image.getAttribute('src')=='images/egg.png') { 
+            image.src = id;
+            image.setAttribute('width',70); 
+            image.setAttribute('height',70);
+        } 
     }
 }
 
@@ -34,14 +39,14 @@ function sentRate(rating) {
 function eggRate(rating) {
     localStorage.setItem('eggRating', rating);
     // Visual feedback: highlight the clicked eggs
-    for (let i = 1; i <= 5; i++) {
-        const eggElement = document.getElementById('egg' + i);
-        if (i <= rating) {
-            eggElement.classList.add('rated');
-        } else {
-            eggElement.classList.remove('rated');
-        }
-    }
+    // for (let i = 1; i <= 5; i++) {
+    //     const eggElement = document.getElementById('egg' + i);
+    //     if (i <= rating) {
+    //         eggElement.classList.add('rated');
+    //     } else {
+    //         eggElement.classList.remove('rated');
+    //     }
+    // }
 }
 
 // Function to close the rating popup
@@ -71,5 +76,6 @@ function submitForm() {
     window.location.href = 'thankyou.html';
 }
 
-// Event listener for form submission button
-document.querySelector('button[type="submit"]').addEventListener('click', submitForm);
+function back() {
+    window.location.href = 'rating.html';
+}
