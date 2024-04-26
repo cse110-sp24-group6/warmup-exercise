@@ -1,0 +1,84 @@
+* {
+    text-align: center;
+}
+
+/* Body */
+body {
+    background-color: rgb(189, 211, 226);
+}
+
+.sentimentContent h2 {
+    font-size: 250%;
+}
+
+/* Dinosaur image attributes */
+
+.ratingOptions img {
+    display: none;
+    width: 5em;
+    height: 5em;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+
+    border: solid;
+
+}
+
+.ratingOptions img:hover {
+    border-color: rgb(78, 132, 21);
+}
+
+
+
+/* Eggs */
+/*
+.egg:active  ~ img{
+    display: block;
+} 
+/* Stuck on figuring out how to make dinosaur image appear */
+*/
+
+.egg img {
+    width: 5em;
+    height: 3em;
+    margin-right: 0.01em;
+    margin-left: 0.01em;
+    margin-bottom: 1em;
+
+    /* border: solid;
+    border-radius: 70%; */
+}
+
+.egg img:hover {
+    width: 5.5em;
+    height: 3.3em;
+}
+
+
+#No_thanks_button {
+    margin-bottom: 5em;
+}
+
+#comments {
+    margin-top: 1em;
+}
+
+#submit_button {
+    margin-top: 2em;
+}
+
+/* @media */
+@media (max-width: 900px){
+    .egg-rating-container img {
+        width: 4em;
+        height: 2.4em;
+        margin-right: 0.001em;
+        margin-left: 0.001em;
+        margin-bottom: 1em;
+    }
+
+    #comments {
+        max-width: 25em;
+    }
+}
