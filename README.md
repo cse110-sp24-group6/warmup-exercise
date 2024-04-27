@@ -4,7 +4,7 @@
 
 Welcome to the documentation for the Sentiment Rating Widget WebApp developed by Team 6: Databaes! Our team consists of 11 dedicated members who collaborated to create a user-friendly and efficient sentiment rating widget using HTML, JS, and CSS. Below, we'll walk you through our planning process, brainstorming sessions, the ideation phase, and finally, our widget's features and functionality.
 
-YouTube: [Link](https://www.youtube.com)
+YouTube: [Link](https://youtu.be/CJLImV_TEks?si=caBDOaxInNve_0Tk)
 
 Website: [A sentiment rating widget](https://cse110-sp24-group6.github.io/warmup-exercise/)
 
