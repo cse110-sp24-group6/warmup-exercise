@@ -3,11 +3,13 @@
 // Function to handle sentiment rating using images
 const dinos = document.querySelectorAll('.dino');
 
+// selectig dino
 function selectDino(dino) {
   dinos.forEach(d => d.classList.remove('selected'));
   dino.classList.add('selected');
 }
 
+// change image function
 function changeImage(id) {
     let ids= ["images/my-dino1.png", "images/my-dino2.png", "images/my-dino3.png", "images/my-dino4.png", "images/my-dino5.png"]; 
     let num = id.charAt(id.length - 5);
@@ -27,6 +29,7 @@ function changeImage(id) {
     }
 }
 
+// "listening" for the user clicking on the dino pic
 dinos.forEach(dino => dino.addEventListener('click', () => selectDino(dino)));
 
 function sentRate(rating) {
@@ -38,15 +41,6 @@ function sentRate(rating) {
 // Function to handle egg rating
 function eggRate(rating) {
     localStorage.setItem('eggRating', rating);
-    // Visual feedback: highlight the clicked eggs
-    // for (let i = 1; i <= 5; i++) {
-    //     const eggElement = document.getElementById('egg' + i);
-    //     if (i <= rating) {
-    //         eggElement.classList.add('rated');
-    //     } else {
-    //         eggElement.classList.remove('rated');
-    //     }
-    // }
 }
 
 // Function to close the rating popup
@@ -55,8 +49,7 @@ function closePopup() {
     window.location.href = 'thankyou_blank.html';
 }
 
-
-
+// function to store values and switch to thank you page
 function submitForm() {
     const sentimentRating = localStorage.getItem('sentimentRating');
     const eggRating = localStorage.getItem('eggRating');
@@ -76,6 +69,7 @@ function submitForm() {
     window.location.href = 'thankyou.html';
 }
 
+// function for navigating back to the home page
 function back() {
     window.location.href = 'index.html';
 }

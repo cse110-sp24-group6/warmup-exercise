@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* body */
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(255, 210, 171);
@@ -12,6 +13,7 @@ body {
     padding: 20px;
 }
 
+/* headings and para */
 h1 {
     margin-bottom: 20px;
     color: #FF6347;
@@ -27,6 +29,8 @@ h3 {
 p {
     margin-bottom: 10px;
 }
+
+/* content */
 .content {
     max-width: 600px;
     margin: 0 auto;
@@ -36,6 +40,7 @@ p {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* the rating */
 #sentimentRating,
 #eggRating {
     font-weight: bold;
@@ -50,6 +55,7 @@ p {
 }
 
 
+/* hovering and selecitng dino pics */
 .dino img {
     opacity: 0.5;
     cursor: pointer;
@@ -64,6 +70,7 @@ opacity: 1.0;
     cursor: pointer;
 }
 
+/* egg rating experience */
 .egg {
     cursor: pointer;
 }
@@ -72,9 +79,12 @@ opacity: 1.0;
     margin-top: 1em;
 }
 
+/* buttons */
 #submit_button {
     margin-top: 2em;
 }
+
+/* making sure the page is compatible on other devices */
 
 /* @media */
 @media (max-width: 900px){
@@ -91,6 +101,7 @@ opacity: 1.0;
     }
 }
 
+/* general button format */
 button {
     font-size: 13px;
     font-weight: bold;

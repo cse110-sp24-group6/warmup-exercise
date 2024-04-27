@@ -3,10 +3,11 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sentiment Rating</title>
-<!-- replace styles.css with css file name -->
+<!-- linking css file -->
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- section for the sentiment analysis -->
 <div id="sentimentPopup" class="hidden">
     <div class="sentimentContent">
         <h2>How do you feel about our service?</h2>
@@ -30,6 +31,7 @@
         </div>
     </div>
 </div>
+<!-- section for rating their eggs-perience -->
 <div id="ratingPopup" class="hidden">
     <div class="egg-rating-container">
         <h2>Rate your eggs-perience (from 1 egg to 5 eggs)</h2>
@@ -50,9 +52,10 @@
             <img src="images/egg.png" id="images/my-dino5.png" alt="egg photo" width="88" height="52.8" onclick = "changeImage('images/my-dino5.png')">
         </span>
     </div>
+    <!-- decline to rate button -->
     <button onclick="closePopup()" style="margin: 10px;">Decline to Rate</button>
 </div>
-
+<!-- allowing user to give additional feedback -->
 <div>
     <label for="comments">Additional Comments:</label><br>
     <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
